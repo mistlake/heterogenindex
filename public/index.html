@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Uploader</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <div class="upload-container">
+        <input type="file" id="image-upload" accept="image/*" hidden/>
+        <label for="image-upload">
+            <img src="images/upload.png" alt="Upload Icon" id="upload-icon"/>
+        </label>
+    </div>
+
+    <div class="image-container">
+        <!-- Image will be appended here by JavaScript -->
+    </div>
+
+    <div class="toolbar">
+        <button id="upload-button">
+            <img src="images/reload.png" alt="Upload Icon" class="toolbar-icon"/>
+        </button>
+        <button id="select-button">
+            <img src="images/select.png" alt="Select Icon" class="toolbar-icon"/>
+        </button>
+    </div>
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>
